@@ -1,0 +1,19 @@
+image: mcr.microsoft.com/dotnet/sdk:latest
+
+stages:
+  - build
+
+build_job:
+  stage: build
+  tags:
+    - docker
+  script:
+    - dotnet restore
+    - dotnet build -c Release
+  artifacts:
+    paths:
+      - Jellyfin.Plugin.Webhook/bin/Release/net8.0/*.nupkg
+      - Jellyfin.Plugin.Webhook/bin/Release/net8.0/*.dll
+    expire_in: 1 week
+  only:
+    - tags
