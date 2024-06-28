@@ -1,5 +1,5 @@
 #### 使用说明    
-加了一个item removed的通知，  
+适用**10.9.7**版本及以上，加了一个item removed的通知，  
 使用时，选择add generic destination 填写webhook地址，勾选 item removed，勾选 **你的用户名**，勾选  **Send All Properties (ignores template)**        
 **存储库链接** `https://github.com/lwgm/webhook/releases/download/manifest/manifest.json`    
 
