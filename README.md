@@ -1,12 +1,8 @@
 #### 使用说明    
-编译时使用vs（当前使用vs2022编译及使用正常）    
-1. 在官方github上拉取时，注意不要拉取最新的，拉取他的**release对应的标签**    
-2. 在**vs中检查依赖的版本**，注意Jellyfin.Controller的版本，官方写的是最新的    
-3. 使用python搭建一个http.server即可，里面需要有:插件.zip和manifest.json   
-4. manifest.json的编写主要有两个问题，一个是修改 abi版本（和Jellyfin.Controller的版本一致即可），一个是修改checksum    
-5. checksum的计算，可以使用软件，或者先不修改，在jellyfin安装提示不成功后，在jellyfin的log中查看jellyfin server计算出的checksum替换当前的checksum    
-6. 使用时，选择add generic destination 填写webhook地址，勾选 itme remove 勾选 **你的用户名**，勾选  **Send All Properties (ignores template)**    
-存储库链接 `https://github.com/lwgm/webhook/releases/download/manifest/manifest.json`
+加了一个item removed的通知，  
+使用时，选择add generic destination 填写webhook地址，勾选 item removed，勾选 **你的用户名**，勾选  **Send All Properties (ignores template)**        
+**存储库链接** `https://github.com/lwgm/webhook/releases/download/manifest/manifest.json`    
+---
 <h1 align="center">Jellyfin Webhook Plugin</h1>
 <h3 align="center">Part of the <a href="https://jellyfin.org">Jellyfin Project</a></h3>
 
