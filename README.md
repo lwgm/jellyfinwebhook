@@ -2,7 +2,7 @@
 加了一个item removed的通知，  
 使用时，选择add generic destination 填写webhook地址，勾选 item removed，勾选 **你的用户名**，勾选  **Send All Properties (ignores template)**        
 **存储库链接** `https://github.com/lwgm/webhook/releases/download/manifest/manifest.json`    
----
+
 <h1 align="center">Jellyfin Webhook Plugin</h1>
 <h3 align="center">Part of the <a href="https://jellyfin.org">Jellyfin Project</a></h3>
 
